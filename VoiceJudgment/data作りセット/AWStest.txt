@@ -1,0 +1,26 @@
+import json
+import boto3
+import logging
+
+client = boto3.client('s3')
+
+def lambda_handler(event, context):
+
+    # set logging
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+
+    # set "bucket name" and "object name"
+    BUCKET = "taikouwav"
+    TEST_FILE   = "sample.wav"
+    
+    # get s3 object
+    try:
+        response = client.get_object(Bucket = BUCKET, Key = TEST_FILE)
+    except Exception as e:
+        return logger.error("Failed to get object: {}".format(e))
+        
+    return {
+        "statusCode": 200,
+        "body": "object body is {}".format(response['Body'].read().decode('utf-8'))
+    }
