@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">sudotest</string>
+    <string name="good">愉快</string>
+    <string name="bad">不愉快</string>
+    <string name="start">スタート</string>
+    <string name="stop">ストップ</string>
+    <string name="back">Back</string>
+    <string name="deng">先に録音を停止してください</string>
+    <string name="learnEnd">学修完了</string>
+    <string name="learning">学修中．．．</string>
+    <string name="learnFail">学修に失敗しました</string>
+    <string name="startMessage">ボタンを押してスタート</string>
+
+</resources>
