@@ -10,7 +10,6 @@ def testmaking(fileName,test_data):
     nceps = 12   # MFCCの次元数
     
     #noiseがあるフォルダの場所(変更しなくてよい)
-    noiseFolder = "C:\\Users\\koyanagi\\Desktop\\noises"#input("absolute path of noise folder : ")
     noiseFolder = noiseFolder+"/*"
 
     noiseList = glob.glob(noiseFolder)
