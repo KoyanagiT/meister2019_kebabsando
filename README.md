@@ -15,10 +15,10 @@ googleDrive‚É“®‰æ‚ğã‚°‚Ä‚¢‚Ü‚·D
 
 # Requirement
 
-*scikit-learn
-*numpy
-*csv
-*ffmpeg
+* scikit-learn
+* numpy
+* csv
+* ffmpeg
 
 # Usage
 
